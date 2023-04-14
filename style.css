@@ -13,6 +13,9 @@
     padding: 0px;
 }
 
+body {
+    background-color: var(--verde);
+}
 header {
     background-image: linear-gradient(
         180deg,
@@ -38,6 +41,7 @@ nav {
     padding: 5px;
     background-color: var(--vermelho-escuro);
     font-weight: bold;
+    box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.25);
 }
 
 nav a {
@@ -53,7 +57,22 @@ nav a:hover {
     transition: all 200ms ease-in-out;
 }
 
-article {
-    width: 800px;
+main {
+    background-color: #fff;
+    max-width: 800px;
     margin: auto;
+    box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.5);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+main p {
+    padding: 10px 0;
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+main h2 {
+    padding-top: 10px;
 }
